@@ -1,0 +1,42 @@
+name: Generate Posts Manifest
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "blog_posts/**/*.md"
+      - "scripts/generate_posts_manifest.py"
+      - ".github/workflows/generate-posts-manifest.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate manifest
+        run: python3 scripts/generate_posts_manifest.py
+
+      - name: Commit manifest if changed
+        run: |
+          if git diff --quiet -- blog_posts/posts.json; then
+            echo "No manifest changes"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add blog_posts/posts.json
+          git commit -m "chore: regenerate posts manifest"
+          git push
