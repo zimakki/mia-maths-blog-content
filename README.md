@@ -20,6 +20,7 @@ title: Your title
 summary: One sentence summary shown on the blog list
 published_on: 2026-02-24
 slug: your-slug
+image: /images/blog/your-slug.png
 ---
 
 Your markdown content here.
@@ -31,6 +32,7 @@ If front matter is omitted:
 - `published_on` is derived from filename date
 - `title` is derived from slug
 - `summary` is derived from the first paragraph
+- `image` defaults to the site-wide OG image (`/images/og-default.png`)
 
 ## Publish workflow
 
