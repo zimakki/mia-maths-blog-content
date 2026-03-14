@@ -32,6 +32,8 @@ The story takes your child's raw numbers and turns them into a five-part highlig
 4. **Win meter** — how many games they've won
 5. **Show Mum or Dad** — a call-to-action to share the story
 
+![Story mode showing a weekly highlight reel](/images/blog/share-story-mode.png)
+
 It's designed to feel like a reward. Instead of just seeing a number, your child gets a narrative of their week — and a reason to show you.
 
 ### Living collection
