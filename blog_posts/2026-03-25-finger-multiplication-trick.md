@@ -3,7 +3,7 @@ title: "The Finger Multiplication Trick: Multiply 6 to 9 Using Only Your Hands"
 summary: "Learn the ancient finger multiplication trick that makes times tables 6-9 easy. A step-by-step guide with examples for parents and teachers."
 published_on: 2026-03-25
 author: Zi Makki
-image: /images/blog/finger-multiplication.png
+image: /images/blog/finger-multiplication.jpg
 ---
 
 What if your child could multiply 7 x 8 in seconds — without memorising a single fact? No flashcards, no drills, just two hands and a trick that merchants and scholars have relied on for over a thousand years.
